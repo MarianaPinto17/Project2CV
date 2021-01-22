@@ -4,26 +4,31 @@
 # recognizes face and draw a square around the face on the image.         #
 ###########################################################################
 
-# HELP SOURCE: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html#face-detection
+# HELP SOURCES: 
+# To use Face recognitio: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html#face-detection
+# To use createCLAHE: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html 
+# To use cascadeClassifier: https://docs.opencv.org/2.4/doc/user_guide/ug_traincascade.html
 
 ############################ MODULES ######################################
 import cv2
 import numpy as np
 import sys
-
-#sem imagem de entrada liga a camera
+import os.path
+############################ INPUT ########################################
+#if no arg turns on webcam
 if len(sys.argv) == 1:
     capture = cv2.VideoCapture(0)
     is_image = False
-#com imagem faz leitura da imagem
+# if there's an arg opens the image
 elif len(sys.argv) == 2:
     frame = cv2.imread(sys.argv[1], cv2.IMREAD_UNCHANGED)
     is_image = True
 else:
     print('Not possible, try again with "python3 face_recognition.py [file-name]"')
 
- #load the trained classifier model
-facecascade = cv2.CascadeClassifier("haarcascade_frontalface_alt2.xml")
+########################## FACE RECOGNITION ###############################
+#load the trained classifier model
+facecascade = cv2.CascadeClassifier("./haarcascade/haarcascade_frontalface_default.xml")
 
 while True:
     if is_image:
@@ -34,7 +39,7 @@ while True:
     # Convert image to grayscale to improve detection speed and accuracy
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # Create CLAHE object
+    # Create CLAHE object 
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
 
     #Apply CLAHE to grayscale image
