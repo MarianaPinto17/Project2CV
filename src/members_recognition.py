@@ -8,6 +8,7 @@
 # HELP SOURCES: 
 # http://dlib.net/
 # To understand the use of facial landmarks: https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
+# shape to np: https://stackoverflow.com/questions/58744107/how-to-get-the-coordinates-of-bounding-box-for-dets-in-dlib
 
 ############################## MODULES ####################################
 import cv2
