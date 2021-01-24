@@ -1,5 +1,5 @@
 ###########################################################################
-# Mariana Pinto 84792 - OPENCV and PYTHON                                 #
+# Mariana Pinto 84792 - OPENCV, PYTHON and DLIB                           #
 # It loads face landmarks from a file, analyzes a webcam or an image,     #
 # recognizes face, eyes, mouth and nouse and draw a square around the     #
 # face on the image.                                                      #

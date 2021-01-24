@@ -55,6 +55,7 @@ while True:
 
     #display frame
     cv2.imshow("webcam", frame)
+    
     #Exit program when the user presses 'q'
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
