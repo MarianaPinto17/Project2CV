@@ -1,7 +1,8 @@
 ###########################################################################
-# Mariana Pinto 84792 - OPENCV and PYTHON                                 #
-# It loads face recognition model from a file, shows a webcam or a image, #
-# recognizes face and draw a square around the face on the image.         #
+# Mariana Pinto 84792 - OPENCV, PYTHON, DLIB and  SCIKIT-LEARN            #
+# Gustavo Inacio 85016                                                    #
+# It loads a dataset and trains the model to use it for emotion           #
+# recognition.                                                            #
 ###########################################################################
 
 # HELP SOURCES: 
@@ -31,7 +32,7 @@ data = {} #Make dictionary for all values
 
 ###############################EMOTIONS FILES#######################################
 def get_files(emotion): #Define function to get file list, randomly shuffle it and split 80/20
-    files = glob.glob("./dataset/ck/CK+48//%s//*" %emotion) #change dataset directory address here!
+    files = glob.glob("./dataset/CK+48//%s//*" %emotion) #change dataset directory address here!
     random.shuffle(files)
     training = files[:int(len(files)*0.8)] #get first 80% of file list
     prediction = files[-int(len(files)*0.2):] #get last 20% of file list

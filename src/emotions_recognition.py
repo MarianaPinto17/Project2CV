@@ -1,11 +1,9 @@
 ###########################################################################
-# Mariana Pinto 84792 - OPENCV and PYTHON                                 #
-# It loads face recognition model from a file, shows a webcam or a image, #
-# recognizes face and draw a square around the face on the image.         #
+# Mariana Pinto 84792 - OPENCV, PYTHON, DLIB and  SCIKIT-LEARN            #
+# Gustavo Inacio 85016                                                    #
+# It reads face landmarks from a webcam or a image, reads the .pkl file   #
+# and compares the data with face landmarks found to discover a emotion.  #
 ###########################################################################
-
-#Help Source:
-
 
 ############################ MODULES ######################################
 import cv2

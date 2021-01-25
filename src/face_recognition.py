@@ -1,5 +1,6 @@
 ###########################################################################
 # Mariana Pinto 84792 - OPENCV and PYTHON                                 #
+# Gustavo Inacio 85016                                                    #
 # It loads face recognition model from a file, shows a webcam or a image, #
 # recognizes face and draw a square around the face on the image.         #
 ###########################################################################
