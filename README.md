@@ -1,4 +1,4 @@
-# Project2CV
+# Project2CV - EMOTION RECOGNITION
 
 The propose of this report has the primary objective of classifying facial expressions shown by a person for the  
 Visual Computation project chosen by our group, using images or a webcam as an input. It is used OpenCV and Python 
