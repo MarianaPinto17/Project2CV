@@ -15,12 +15,14 @@ The dataset has 7 folders named with which emotion that will serve for test our 
 
 
 To deploy our project, some prerequisites/libraries need to be installed:
+
         • OpenCV
         • Python language
         • Dlib (use pip 3 install dlib)
         • Sickit-learn (use pip 3 install sickit-learn)
         
 We have 4 different types of programs:
+
         • Face_recognition.py: recognizes only faces
         • Members_recognition.py: recognizes facial landmarks and faces
         • Train_model.py: trains our model to recognise emotions
