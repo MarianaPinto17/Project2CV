@@ -1,1 +1,0 @@
--> Usamos CLAHE PORQUE strong sunlight coming from the side from a window, which created high contrasts and strong shadows

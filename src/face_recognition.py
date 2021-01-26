@@ -15,6 +15,7 @@ import cv2
 import numpy as np
 import sys
 import os.path
+
 ############################ INPUT ########################################
 #if no arg turns on webcam
 if len(sys.argv) == 1:
